@@ -1,49 +1,92 @@
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
-  <img src="assets/banner-light.svg" alt="MrKreet1: Python, веб-разработка, вычислительная химия" width="100%">
-</picture>
+<img src="assets/hero-ru.svg" alt="MrKreet1: сервисы на Python, сайты и расчёты для химии" width="100%">
 
-**Русский** · [English](README.en.md)
+**Русский** / [English](README.en.md)
 
-Пишу сервисы на Python и делаю сайты для бизнеса:
+Пишу веб-сервисы и панели на FastAPI и Streamlit, ищу аномалии в данных, делаю многоязычные сайты и автоматизирую расчёты на Linux-серверах.
 
-- веб-сервисы и панели управления на FastAPI и Streamlit;
-- анализ данных: поиск аномалий, OCR, отчёты;
-- многоязычные сайты с онлайн-записью и SEO-разметкой;
-- автоматизация расчётов на Linux-серверах.
+## Сервисы
 
-### Сервисы
+<img align="left" width="320" src="assets/orca-web.svg" alt="Очередь задач и график нагрузки">
 
-| Проект | Что это | Стек |
-|---|---|---|
-| **ORCA Web** | Панель для запуска расчётов на VPS: очередь задач, live-логи, графики CPU/RAM, роли и защита от CSRF | FastAPI, SQLAlchemy, SQLite |
-| **ORCA Cluster Service** | Сервис для серий расчётов в контейнере: сохраняет частичный прогресс, тестируется без самой ORCA | Python, Docker |
+### ORCA Web
 
-### Данные и машинное обучение
+Панель для запуска расчётов на VPS. Очередь задач, live-логи, графики CPU и RAM, роли пользователей и защита от CSRF.
 
-| Проект | Что это | Стек |
-|---|---|---|
-| **Поиск аномалий в бухгалтерии** | Находит подозрительные операции с помощью правил и Isolation Forest и объясняет каждое срабатывание | FastAPI, Streamlit, scikit-learn, PostgreSQL, Docker |
-| **Сверка первичных документов** | Сопоставляет операции с документами: чтение PDF и сканов, OCR, оценка риска | Streamlit, pandas, scikit-learn, Tesseract |
+<sub>FastAPI, SQLAlchemy, SQLite</sub>
 
-### Сайты
+<br clear="left">
 
-| Проект | Что это | Стек |
-|---|---|---|
-| **Сайт медицинского центра** | Три языка (RU / KK / EN), поиск по 14 направлениям, страница врачей, запись через WhatsApp, SEO-разметка | HTML, CSS, JavaScript |
+<img align="left" width="320" src="assets/cluster-service.svg" alt="Перебор параметров с отмеченной лучшей точкой">
 
-### Вычислительная химия
+### ORCA Cluster Service
 
-| Проект | Что это | Стек |
-|---|---|---|
-| [B6_ORCA_campaign](https://github.com/MrKreet1/B6_ORCA_campaign) | Поиск устойчивой геометрии кластера B6: 252 расчёта в скрининге, уточнение на PBE0-D4/def2-TZVP, проверка частот | Python, Bash, ORCA 6.1 |
-| [B12_ORCA_workflow](https://github.com/MrKreet1/B12_ORCA_workflow) | Поиск структур кластера B12, от объёмных до планарных. Результаты пока предварительные | Python, Bash, ORCA 6.1 |
+Сервис для серий расчётов в контейнере. Сохраняет частичный прогресс и тестируется без самой ORCA.
 
-### Стек
+<sub>Python, Docker</sub>
+
+<br clear="left">
+
+## Данные и машинное обучение
+
+<img align="left" width="320" src="assets/anomalies.svg" alt="Облако обычных операций и три отмеченных выброса">
+
+### Поиск аномалий в бухгалтерии
+
+Находит подозрительные операции с помощью правил и Isolation Forest и объясняет каждое срабатывание.
+
+<sub>FastAPI, Streamlit, scikit-learn, PostgreSQL, Docker</sub>
+
+<br clear="left">
+
+<img align="left" width="320" src="assets/documents.svg" alt="Операции, сопоставленные с документом, одна без пары">
+
+### Сверка первичных документов
+
+Сопоставляет операции с документами: читает PDF и сканы, распознаёт текст, оценивает риск.
+
+<sub>Streamlit, pandas, scikit-learn, Tesseract</sub>
+
+<br clear="left">
+
+## Сайты
+
+<img align="left" width="320" src="assets/website.svg" alt="Буквы Я, Ә и A: три языка сайта">
+
+### Сайт медицинского центра
+
+Русский, казахский и английский. Поиск по 14 направлениям, страница врачей, запись через WhatsApp, SEO-разметка.
+
+<sub>HTML, CSS, JavaScript</sub>
+
+<br clear="left">
+
+## Вычислительная химия
+
+<a href="https://github.com/MrKreet1/B6_ORCA_campaign"><img align="left" width="320" src="assets/b6.svg" alt="252 расчёта, 10 финальных, одна лучшая структура"></a>
+
+### [B6_ORCA_campaign](https://github.com/MrKreet1/B6_ORCA_campaign)
+
+Поиск устойчивой геометрии кластера B6: 252 расчёта в скрининге, 10 финальных на уровне PBE0-D4/def2-TZVP, проверка частот.
+
+<sub>Python, Bash, ORCA 6.1</sub>
+
+<br clear="left">
+
+<a href="https://github.com/MrKreet1/B12_ORCA_workflow"><img align="left" width="320" src="assets/b12.svg" alt="Рассчитанная геометрия кластера B12"></a>
+
+### [B12_ORCA_workflow](https://github.com/MrKreet1/B12_ORCA_workflow)
+
+Поиск структур кластера B12, от объёмных до планарных. Результаты пока предварительные.
+
+<sub>Python, Bash, ORCA 6.1</sub>
+
+<br clear="left">
+
+## Стек
 
 **Языки:** Python, JavaScript, HTML, CSS, Bash<br>
 **Веб:** FastAPI, SQLAlchemy, Jinja2, Streamlit<br>
 **Данные:** pandas, scikit-learn, PostgreSQL, SQLite<br>
 **Инфраструктура:** Docker, Linux VPS, GitHub Actions
 
-<sub>На баннере рассчитанная геометрия кластера B6 из проекта B6_ORCA_campaign.</sub>
+<sub>Молекула на баннере движется по рассчитанной колебательной моде B6, под ней частоты из того же расчёта. Амплитуда увеличена.</sub>
